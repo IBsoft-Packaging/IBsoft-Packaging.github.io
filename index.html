@@ -2,755 +2,247 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IBsoft PACKAGING</title>
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>home</title>
 
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- custom js file link  -->
+    <script src="js/script.js" defer></script>
+
 </head>
 <body>
-    
+
 <!-- header section starts  -->
 
-<header>
+<header class="header">
 
-    <div id="menu-bar" class="fas fa-bars"></div>
-<!-- Societé nationale d'information et logiciels  -->
-    <a href="#" class="logo"><span>IBsoft</span>      Packaging</a>
+    <a href="index.html" class="logo"> Ibsoft </a>
 
-    
     <nav class="navbar">
-        <a href="#home">Acceuil</a>
-        <a href="#packages">Logiciels</a>
-        <a href="#services">Services</a>
-        <a href="#gallery">Produits</a>
-        <a href="#review">Team</a>
-        <a href="#contact">Contact</a>
-        <a href="#Partenaire">Partenaire</a>
+        
+        <ul>
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="logiciels.html">Logiciels</a></li>
+            <li><a href="#">Site Web +</a>
+                <ul>
+                    <li><a href="vitrine.html">Site vitrine</a></li>
+                    <li><a href="dynamique.html">Site dynamique</a></li>
+                    <li><a href="ecom.html">Site E-commerce</a></li>
+                    <li><a href="index.html">Site immobilier</a></li>
+                    <li><a href="portfolio.html">Site portfolio</a></li>
+                    <li><a href="formulaire.html">Formulaire</a></li>
+                </ul>
+            </li>
+                <li><a href="#">Service +</a>
+                    <ul>
+                        <li><a href="360.html">creation des visites 360°</a></li>
+                        <li><a href="index.html">Ajouter google map</a></li>
+                        <li><a href="index.html"> optimisation réseaux</a></li>
+                        <li><a href="index.html">drive test 4G</a></li>
+                        <li><a href="index.html">Référencment SEO</a></li>
+                        <li><a href="index.html">Refaire un site</a></li>
+                    </ul>
+                </il>    
+            </li>
+            <li><a href="products.html">Produits</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="#">compte +</a>
+                <ul>
+                    <li><a href="login.html">se connecter</a></li>
+                    <li><a href="register.html">s'inscrire</a></li>
+                </ul>
+            </il>
+        </ul>
     </nav>
 
     <div class="icons">
-        <i class="fas fa-search" id="search-btn"></i>
-        <i class="fas fa-user" id="login-btn"></i>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
     </div>
 
-    <form action="" class="search-bar-container">
-        <input type="search" id="search-bar" placeholder="search here...">
-        <label for="search-bar" class="fas fa-search"></label>
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
     </form>
 
 </header>
 
 <!-- header section ends -->
 
-<!-- login form container  -->
+<!-- home section starts      -->
 
-<div class="login-form-container">
+<section class="home">
 
-    <i class="fas fa-times" id="form-close"></i>
-
-    <form action="">
-        <h3>connexion</h3>
-        <input type="email" class="box" placeholder="email">
-        <input type="password" class="box" placeholder="password">
-        <input type="submit" value="Se Connecter" class="btn">
-        <input type="checkbox" id="remember">
-        <label for="remember">souviens-toi</label> 
-        <p>mot de passe oublié? <a href="#">Cliquez ici</a></p>
-        <p>vous n'avez pas de compte ? <a href="#">S'inscrire maintenant </a></p>
-    </form>
-
-</div>
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-    <div class="content">
-        <h3>Votre Partenaire Digital</h3>
-        <br><br><br><br><br>
-        <p>des solutions matériels et logiciels  evolutives et sur mesure pour votre PME. </p>
-        <!--   <p>des solutions logiciels   
-        <a href="#" class="btn">Voir plus</a> evolutives et sur mesure pour votre PME. </p> -->
-       
-      
+    <div class="slide active" style="background: url(images/home-bg-5.png) no-repeat;">
+        <div class="content">
+            <span>Nous vous realisons un site web beau, tout propre, 
+                <br>un affichage bien adapté sur pc smartphone et tablette</span>
+            <h3> 360° services</h3>
+            <a href="contact.html" class="btn">demandez un devis</a>
+        </div>
+    </div>
+<!-- 
+    <div class="slide" style="background: url(images/home-bg-2.png) no-repeat;">
+        <div class="content">
+            <span>protect your eyes</span>
+            <h3>360° services</h3>
+            <a href="#" class="btn">demandez un devis</a>
+        </div>
+    </div>
+-->
+    <div class="slide" style="background: url(images/home-bg-6.png) no-repeat;">
+        <div class="content">
+            <span>spesialiste dans l'optimisation SEO des sites web et 
+                <br>l'augmenation de leur visibilité dans les moteurs rechercher</span>
+            <h3> 360° services</h3>
+            <a href="#" class="btn">demandez un devis</a>
+        </div>
     </div>
 
-    <div class="controls">
-        <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
-        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
-        <span class="vid-btn" data-src="images/vid-3.mp4"></span>
-        <span class="vid-btn" data-src="images/vid-4.mp4"></span>
-        <span class="vid-btn" data-src="images/vid-5.mp4"></span>
-    </div>
-
-    <div class="video-container">
-        <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
-    </div>
+    <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
+    <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
 
 </section>
 
-<!-- home section ends -->
+<!-- home section ends     -->
 
-<!-- book section starts  
 
-<section class="book" id="book">
+<!-- web section starts     
+<section class="home">
 
-    <h1 class="heading">
-        <span>b</span>
-        <span>o</span>
-        <span>o</span>
-        <span>k</span>
-        <span class="space"></span>
-        <span>n</span>
-        <span>o</span>
-        <span>w</span>
-    </h1>
+   
+        <div class="">
+            <h3>Création des sites web</h3><br><br>
+            <span>Agence Spécialisée dans la création  des logiciels de gestion des sites web , nous démarquons des autres Agences par notre engagement total envers nos clients, la qualité de nos prestations, 
+                et la flexibilité de nos tarifs qui s'adaptent à tous les budgets.<br><br>
 
-    <div class="row">
+                Nous avons développé des technologies, qui nous permet de créer des sites web professionnels, beaucoup plus rapidement, et quels que soient les besoins graphiques.<br><br>
 
-        <div class="image">
-            <img src="images/book-img.svg" alt="">
-        </div>
-
-        <form action="">
-            <div class="inputBox">
-                <h3>where to</h3>
-                <input type="text" placeholder="place name">
-            </div>
-            <div class="inputBox">
-                <h3>how many</h3>
-                <input type="number" placeholder="number of guests">
-            </div>
-            <div class="inputBox">
-                <h3>arrivals</h3>
-                <input type="date">
-            </div>
-            <div class="inputBox">
-                <h3>leaving</h3>
-                <input type="date">
-            </div>
-            <input type="submit" class="btn" value="book now">
-        </form>
-
-    </div>
-
-</section> -->
-
-<!-- book section ends -->
-
-<!-- product section starts  -->
-
-<section class="packages" id="packages">
-    <h1 class="heading">
-        <span>L</span>
-        <span>o</span>
-        <span>g</span>
-        <span>i</span>
-        <span>c</span>
-        <span>i</span>
-        <span>e</span>
-        <span>l</span>
-    </h1>
-    <div class="box-container">
-        <div class="box">
-            <img src="images/P73-08329-Microsoft-Windows-Server-Standard-2022-64Bit-6-Core-Francais-300x300.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Windows Server2022 </h3>
-                <p>Microsoft Windows Server Standard 2022 64Bit 1 pk DSP OEI DVD 16 Core</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <div class="price"> 8,900 DH HT   <span>9,000.00 DH HT </span> </div>
-                <a href="#" class="btn">Ajpouter au panier</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/prod5.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i>IBsoft Gestion Commerciale</h3>
-                <p>logiciel de gestion commerciale outil efficace pour gére les ventes.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <div class="price"> 5,000 DH HT   <span>6,000.00 DH HT </span> </div>
-                <a href="#" class="btn">Ajpouter au panier</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/prod2.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i>IBsoft pointe de vente </h3>
-                <p>logiciel idéal pour les petites commerce.</p>
-                <br><br>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                   
-                </div>
-                <div class="price"> 3,000 DH HT   <span>4,500.00 DH HT </span> </div>
-                <a href="#" class="btn">Ajpouter au panier</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/prod6.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> IBsoft paie </h3>
-                <p>le logiciel de paie conforme aux norme.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <div class="price"> a Discuter <span> </span> </div>
-                <a href="#" class="btn">Ajpouter au panier</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/prod7.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> IBsoft station de service </h3>
-                <p>Logiciel station de service.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <div class="price"> a Discuter </span> </div>
-                <a href="#" class="btn">Ajpouter au panier</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/prod4.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> HR </h3>
-                <p>Logiciel pour Café et Restaurents.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>  
-                </div>
-                <div class="price"> a Discuter  </span> </div>
-                <a href="#" class="btn">Ajpouter au panier</a>
-            </div>
-        </div>
-
-       
-
-    </div>
-
-</section>
-
-<!-- packages section ends -->
-
-<!-- services section starts  -->
-
-<section class="services" id="services">
-
-    <h1 class="heading">
-        <span>S</span>
-        <span>e</span>
-        <span>r</span>
-        <span>v</span>
-        <span>i</span>
-        <span>c</span>
-        <span>e</span>
-        <span>s</span>
-    </h1>
-
-    <div class="box-container">
-    
-        <div class="box">
-            <h3>Services Développement à la demande</h3>
-        <p> <p>Nous effectuons la réalisation des logiciels de A à Z incluant la définition du cahier des charges,la conception du design, le développement dans des langages de pointe.
-            Nos Logicieles sont originaux, c’est-à-dire qu’ils ne reposent par sur un outil générant quasi-automatiquement de nombreuses déclinaisons à partir d’un schéma général, 
-            mais que chacun d’eux est conçu de façon modulaire en fonction des besoins spécifiques du client, Cette façon de faire vous garantit une performance.
-                    
-                    Selon les besoins exprimés, les logiciels que nous développons peuvent incorporer tous les éléments de la gestion de votre entreprise : PME, PMI.
-            </p>
-
-            <br><br><br><br>
-        </div>
-
-        <div class="box">
-            <h3>Services Support Technique</h3><br>
-            <p>Les produits de notre socéité évoluent régulièrement afin d´apporter à nos clients les dernières innovations pour leur utilisation.
-
-                Les mises à jour peuvent se faire par l´intermédiaire RDP ou TeamViewer, installation sur site par nos techniciens.</p>
-        </div>
-
-        
-        
-        </div>
-      
-    </div>
-<br><br><br><br><br><br><br>
-</section>
-
-<!-- services section ends -->
-
-<!-- gallery section starts  -->
-
-<section class="gallery" id="gallery">
-
-    <h1 class="heading">
-        <span>P</span>
-        <span>r</span>
-        <span>o</span>
-        <span>d</span>
-        <span>u</span>
-        <span>i</span>
-        <span>t</span>
-        <span>s</span>
-    </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="images/JL357A-HPE-Aruba-2540-48G-PoE-4SFP-Switch-48-ports-Gigabit-Ethernet-PoE-370W-4SFP-Gere-L2-01-300x300.jpg" alt="">
-            <div class="content">
-                <h3>Switch Cisco</h3>
-                <p>22,800.00 DH HT</p>
-                <a href="#" class="btn">voir plus</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/4620C009AA-Canon-PIXMA-G640-Imprimante-multifonction-a-reservoir-integre-A4-USB-WiFi-300x300.jpg" alt="">
-            <div class="content">
-                <h3>imprimante-Canon</h3>                
-                <p>2,880.00 DH HT </p>
-                <a href="#" class="btn">Voir Plus</a>
-            </div>
-            
-        </div>
-        
-
-        <div class="box">
-            <img src="images/JL261A-HPE-Aruba-2930F-24G-PoE-4SFP-Switch-24-ports-Gigabit-Ethernet-PoE-370W-4SFP-L3-Gere-300x300.jpg" alt="">
-            <div class="content">
-                <h3>Switch Cisco</h3>
-                <p>18,175.00 DH HT</p>
-                <a href="#" class="btn">voir plus</a>
-
-            </div>
-        </div>
-        <div class="box">
-            <img src="images/Imprimante-detiquettes-01--300x285.jpg" alt="">
-           
-            <div class="content">
-                <h3>Imprimante d'ettiquettes</h3>
-                <p>2000.00 DH HT </p>
-                <a href="#" class="btn">voir plus</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="images/Lecteur-de-codes-barres-300x300.jpg" alt="">
-            <div class="content">
-                <h3>Lecteur Codes barres</h3>
-                <p></p>
-                <a href="#" class="btn">voir plus</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="images/Imprimante-tickets-300x300.png" alt="">
-            <div class="content">
-                <h3>Imprimante d'ettiquettes</h3>
-                <p>1000.00 DH HT </p>
-                <a href="#" class="btn">voir plus</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="images/Grandstream-GWN7000-Routeur-VPN-Gigabit-multi-WAN-3G-4G-LTE-USB-3.0-300x300.jpg" alt="">
-            <div class="content">
-                <h3>Routeur Grandstream </h3>
-                <p>1,700.00 DH HT </p>
-                <a href="#" class="btn">voir plus</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="images/img8.jpg" alt="">
-            <div class="content">
-                <h3>Caisse Tactile</h3>
-                <p>12,000.00 DH HT </p>
-                <a href="#" class="btn">voir plus</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="images/HF680-R1-2USB-Honeywell-HF680-Scanner-de-code-a-barres-2D-300x300.jpg" alt="">
-            <div class="content">
-                <h3>Lecteur code barre</h3>
-                <p>1,800.00 DH HT </p>
-                <a href="#" class="btn">voir plus</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/Hikvision-DS-K1T642MF-Terminal-dacces-avec-reconnaissance-faciale-300x300.jpg" alt="">
-            <div class="content">
-                <h3>Pointeuse biometrique</h3>
-                <p>2,800.00 DH HT </p>
-                <a href="#" class="btn">voir plus</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="images/ZKTeco-IN03-Pointeuse-biometrique-avec-empreinte-digitale-RFID-300x300.jpg" alt="">
-            <div class="content">
-                <h3>Pointeuse biometrique</h3>
-                <p>1,700.00 DH HT </p>
-                <a href="#" class="btn">voir plus</a>
-            </div>
-
-            <div class="box">
-                <img src="images/ZKTeco-IN01-Controle-dacces-empreintes-digitales-Carte-RFID-Password-300x300.jpg" alt="">
-                <div class="content">
-                    <h3>Pointeuse biometrique</h3>
-                    <p>1,550.00 DH HT </p>
-                    <a href="#" class="btn">voir plus</a>
-                </div>
-            
-                <div class="box">
-                    <img src="images/2234C002AA-Canon-Selphy-CP1300-Imprimante-Photo-WiFi-USB-Noir-300x300.jpg" alt="">
-                    <div class="content">
-                        <h3>Imprimante photo</h3>
-                        <p>1,550.00 DH HT </p>
-                        <a href="#" class="btn">voir plus</a>
-                    </div>
-
-                    
-                <div class="box">
-                    <img src="images/P56961-B21-HPE-ProLiant-DL380-Gen10-Serveur-Xeon-4210R-32Go-8-SFF-BC-800W-300x300.jpg" alt="">
-                    <div class="content">
-                        <h3>Serveur Xeon 32Go</h3>
-                        <p>34,450.00 DH HT </p>
-                        <a href="#" class="btn">voir plus</a>
-                    </div>
-
-                   
-                    <div class="box">
-                        <img src="images/P21439-421-HPE-ProLiant-ML110-Gen10-Serveur-Xeon-B-3206R-8-Core-16Go-Alimentation-550W-300x300 (1).jpg" alt="">
-                        <div class="content">
-                            <h3>Serveur Xeon 16Go</h3>
-                            <p>14,200.00 DH HT</p>
-                            <a href="#" class="btn">voir plus</a>
-                        </div>
-    
-                        <div class="box">
-                            <img src="images/SP010TBPHDA60S3K-Silicon-Power-Armor-A60-Disque-dur-externe-1TB-HDD-300x300.jpg" alt="">
-                            <div class="content">
-                                <h3>Disque dure 4TB </h3>
-                                <p>1,320.00 DH HT </p>
-                                <a href="#" class="btn">voir plus</a>
-                            </div>
-    
-                            <div class="box">
-                                <img src="images/SP010TBPHDA60S3K-Silicon-Power-Armor-A60-Disque-dur-externe-1TB-HDD-300x300.jpg" alt="">
-                                <div class="content">
-                                    <h3>Disque dure 2TB</h3>
-                                    <p> 1000.00 DH HT</p>
-                                    <a href="#" class="btn">voir plus</a>
-                                </div>
-    
-                                <div class="box">
-                                    <img src="images/WD140EFGX-WD-Red-Plus-NAS-Disque-dur-14-To-SATA-7200-RPM-256-Mo-300x300.jpg" alt="">
-                                    <div class="content">
-                                        <h3>Disque dure 2To </h3>
-                                        <p>4,400.00 DH HT </p>
-                                        <a href="#" class="btn">voir plus</a>
-                                    </div>
-                    
-                                    <div class="box">
-                                        <img src="images/WDBNFA0000NBK-WD-My-Cloud-PR4100-Serveur-NAS-Intel-Pentium-N3710-4Go-RAM-Gigabit-Ethernet-300x300.jpg" alt="">
-                                        <div class="content">
-                                            <h3>Serveur NAS </h3>
-                                            <p>6,500.00 DH HT </p>
-                                            <a href="#" class="btn">voir plus</a>
-                                        </div>
+                C'est grâce à ces technologies que nous pouvons proposer de hauts niveaux de création à des tarifs attractifs.<br>
                 
-                                        
-                                    <div class="box">
-                                        <img src="images/WDBBCL0000NBK-Serveur-NAS-WD-My-Cloud-PR2100-Intel-Pentium-N3710-1.6-GHz-4Go-RAM-GigE-300x300.jpg" alt="">
-                                        <div class="content">
-                                            <h3>Serveur NAS </h3>
-                                            <p>4,950.00 DH HT </p>
-                                            <a href="#" class="btn">voir plus</a>
-                                        </div>
+                Votre site est tout beau tout propre ,site efficace agréable et performante, un affichage bien adapté a votre Smart phone, PC et tablette.<br><br>
                 
-                                        
-                                    <div class="box">
-                                        <img src="images/C31CA85042-Epson-TM-T88V-Imprimante-de-tickets-thermique-USB-2.0-300x300.jpg" alt="">
-                                        <div class="content">
-                                            <h3>Imprimante d'ettiquettes </h3>
-                                            <p>2,600.00 DH HT </p>
-                                            <a href="#" class="btn">voir plus</a>
-                                        </div>
-
-                                        <div class="box">
-                                            <img src="images/C31CH51012-Epson-TM-T20III-Imprimante-Thermique-de-tickets-POS-USB-LAN-300x300.jpg" alt="">
-                                            <div class="content">
-                                                <h3>Imprimante d'ettiquettes </h3>
-                                                <p>1,600.00 DH HT </p>
-                                                <a href="#" class="btn">voir plus</a>
-                                            </div>
-
-                                            <div class="box">
-                                                <img src="images/9VH72AA-HP-E22-G4-Ecran-215-pouces-Full-HD-VGA-HDMI-DisplayPort-4-USB-A-3.2-300x300 (1).jpg" alt="">
-                                                <div class="content">
-                                                    <h3>Ecran </h3>
-                                                    <p>1,500.00 DH HT </p>
-                                                    <a href="#" class="btn">voir plus</a>
-                                                </div>
-
-                                                <div class="box">
-                                                    <img src="images/1A7E4AA-HP-P22-G4-Ecran-215-pouces-Full-HD-DisplayPort-HDMI-VGA-300x300.jpg" alt="">
-                                                    <div class="content">
-                                                        <h3>Ecran </h3>
-                                                        <p>4,400.00 DH HT </p>
-                                                        <a href="#" class="btn">voir plus</a>
-                                                    </div>
-
-                                                    <div class="box">
-                                                        <img src="images/" alt="">
-                                                        <div class="content">
-                                                            <h3>Disque dure 2To </h3>
-                                                            <p>1,800.00 DH HT </p>
-                                                            <a href="#" class="btn">voir plus</a>
-                                                        </div>
-                                                        <div class="box">
-                                                            <img src="images/" alt="">
-                                                            <div class="content">
-                                                                <h3>Disque dure 2To </h3>
-                                                                <p>1,800.00 DH HT </p>
-                                                                <a href="#" class="btn">voir plus</a>
-                                                            </div>
+                En vous offrons un service unique sur la base de nouveaux idées, de styles, d'outils et de techniques tous pour votre réussite.   <br><br> 
+            
+            
+            </span>
+        </div>
+</section>
 
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+web section ends     -->
 
-                
+
+<!-- banner section starts  -->
+
+<section class="banner">
+
+    <div class="box">
+        <img src="images/banner-1.jpg" alt="">
+        <div class="content">
+            
+            <span>Site web vitrine</span>
+            <h3>Livraison 7 jours</h3>
+            <a href="contact.html" class="btn">demandez un devis</a>
 
             
         </div>
-
     </div>
 
-</section>
-
-<!-- gallery section ends -->
-
-<!-- review section starts  -->
-
-<section class="review" id="review">
-
-    <h1 class="heading">
-        <span>T</span>
-        <span>e</span>
-        <span>a</span>
-        <span>m</span>    
-    </h1>
-   <br><br><br><br><br><br><br><br><br><br>
-    <div class="swiper-container review-slider">
-
-        <div class="swiper-wrapper">
-
-           
-            <div class="swiper-slide">
-                <div class="box">
-                    <img src="images/nizar.jpg" alt="">
-                    <h3>Hicham bayadi</h3>
-                    <p> Commercial</p>
-                    
-                </div>
-            </div>
-
-
-            
-            <div class="swiper-slide">
-                <div class="box">
-                    <img src="images/pic1.png" alt="">
-                    <h3>Bouchaib Alaghrouch</h3>
-                    <p>Ingénieur informatique industrielle</p>
-                    
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="box">
-                    <img src="images/nizar.jpg" alt="">
-                    <h3>Nizar Ennaciri</h3>
-                    <p>Support Technique</p>
-                    
-                </div>
-            </div>
+    <div class="box">
+        <img src="images/banner-2.jpg" alt="">
+        <div class="content">
+            <span>Site web dynamique</span>
+            <h3>Livraison 30 jours</h3>
+            <a href="contact.html" class="btn">demandez un devis</a>
 
         </div>
-
     </div>
 
-</section>
-<br><br><br><br><br><br><br><br><br>
-                                                
-<
-
-<!-- review section ends -->
-
-<!-- contact section starts  -->
-
-<!-- contact section ends -->
-<section class="contact" id="contact">
-    <h1 class="heading">
-            <span>C</span>
-            <span>o</span>
-            <span>n</span>
-            <span>t</span>
-            <span>a</span>
-            <span>c</span>
-            <span>t</span>
-        </h1>
-
-        <div class="row">
-
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106267.5169940375!2d-7.570014837500011!3d33.6607917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cba2943d980f%3A0xa84d76bfd3f1fc25!2sZenata%20Car%20Service!5e0!3m2!1sfr!2sma!4v1675620588320!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
-     <form action="">
-     <div class="inputBox">
-     <input type="text" placeholder="Nom">
-     <input type="email" placeholder="Email">
-     </div>
-     <div class="inputBox">
-     <input type="number" placeholder="Téléphone">
-     <input type="text" placeholder="Objet">
-     </div>
-     <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
-     <input type="submit" class="btn" value="Envoyer">
-     </form>
-
- </div>
-    
-    </section>  
-    
-<!-- contact section start       
-<section class="brand-container"> -->
-
-<section class="Partenaire" id="Partenaire">
-    <h1 class="heading">
-  
-    <h1 class="heading">
-        <span>P</span>
-        <span>a</span>
-        <span>r</span>
-        <span>t</span>
-        <span>e</span>
-        <span>n</span>
-        <span>a</span>
-        <span>i</span>
-        <span>r</span>
-        <span>e</span>
-        <span>s</span>
-    </h1>
-    <div class="swiper-container brand-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/par1.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="images/par2.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="images/par3.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="images/par4.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="images/par5.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="images/par6.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="images/par7.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="images/par8.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="images/par9.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="images/par10.jpg" alt=""></div>
+    <div class="box">
+        <img src="images/banner-3.jpg" alt="">
+        <div class="content">
+            <span>Site web E-com</span>
+            <h3>Livraison 20 jours</h3>
+            <a href="contact.html" class="btn">demandez un devis</a>
         </div>
     </div>
 
 </section>
 
-<!-- footer section  -->
+<!-- banner section ends -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts  -->
 
 <section class="footer">
 
     <div class="box-container">
 
         <div class="box">
+            <h3>Liens Utiles</h3>
+            <a href="logiciels.html"> <i class="fas fa-angle-right"></i> logiciel</a>
+            <a href="siteweb.html"> <i class="fas fa-angle-right"></i> site web</a>
+            <a href="products.html"> <i class="fas fa-angle-right"></i> produits</a>
+            <a href="contact.html"> <i class="fas fa-angle-right"></i> contact</a>
+        </div>
+
+        <div class="box">
             <h3>Contactez-Nous</h3>
+            <a href="" >   </a>
             <a href="https://wa.me/212711645036" >+212 7 11 64 50 36</a>
-            <a href="mailto:b.alaghrouch@gmail.com">ibsoft-packaging@gmail.com</a>
-            <a href="#">Mohammedia, Maroc - 20631</a>
+            <a href="mailto:ibsoft.packaging@gmail.com">ibsoft-packaging@gmail.com</a>
+            <a href="contact.html">Mohammedia, Maroc - 20631</a>
+
+            
+         
         </div>
 
         <div class="box">
             <h3>Suivez-Nous</h3>
-            <a href="https://www.youtube.com/@ibsoftpacking5910/f/">youtube</a>
-            <a href="https://twitter.com/home"">twitter</a>
-            <a href="https://www.linkedin.com/in/bouchaib-alaghrouch-2a6011238/"">linkedin</a>
+            <a href="https://twitter.com/home"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="https://wa.me/212711645036"> <i class="fab fa-instagram"></i> whatsapp </a>
+            <a href="https://www.linkedin.com/in/bouchaib-alaghrouch-2a6011238/"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="https://www.youtube.com/channel/UCVOVam-UX9E7L0_P5esbA7A"> <i class="fab fa-youtube "></i> youtube </a>
         </div>
 
         <div class="box">
-            <h3>Liens Utiles</h3>
-            <a href="#">Acceuil</a>
-            <a href="#">logiciels</a>
-            <a href="#">Produits</a>
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="">
+                <input type="email" placeholder="enter your emal">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
         </div>
-
-        <div class="box">
-            <h3>Nos Prestations</h3>
-            <a href="#">Développement sur mesure</a>
-            <a href="#">Consulting en Systèmes d'information</a>
-            <a href="#">Audit des Systèmes d'information</a>
-        </div>
-        
-        
 
     </div>
 
-    <h1 class="credit"> Copyright © 2022  <span> IBsoft Packaging </span> | Tous Droits Réservés </h1>
-  
+    
+
+    <h1 class="credit"> <a href="">ICE : 00107842300008  |  IF : 342560 | Taxe professionnelle N° :3200037</a><br> Copyright © 2022  <span>| IBsoft Packaging |</span>  Tous Droits Réservés </h1>
+
+    <div class="credit"> <a href="">Conditions Générales d'Utilisation</a>  <span></span> | | <a href="">Mentions légales </a> </div>
 
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
+<!-- footer section ends -->
 
 </body>
 </html>
