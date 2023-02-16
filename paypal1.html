@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- custom js file link  -->
+    <script src="js/script.js" defer></script>
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+    <a href="index.html" class="logo"> Ibsoft </a>
+
+    <nav class="navbar">
+        
+        <ul>
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="logiciels.html">Logiciels</a></li>
+            <li><a href="#">Site Web +</a>
+                <ul>
+                    <li><a href="vitrine.html">Site vitrine</a></li>
+                    <li><a href="dynamique.html">Site dynamique</a></li>
+                    <li><a href="ecom.html">Site E-commerce</a></li>
+                    <li><a href="blogs.html">Site immobilier</a></li>
+                    <li><a href="portfolio.html">Site portfolio</a></li>
+                    <li><a href="formulaire.html">Formulaire</a></li>
+                </ul>
+            </li>
+                <li><a href="#">Service +</a>
+                    <ul>
+                        <li><a href="360.html">creation des visites 360°</a></li>
+                        <li><a href="map.html">Ajouter google map</a></li>
+                        <li><a href="index.html"> optimisation réseaux</a></li>
+                        <li><a href="index.html">drive test 4G</a></li>
+                        <li><a href="index.html">Référencment SEO</a></li>
+                        <li><a href="index.html">Refaire un site</a></li>
+                    </ul>
+                </il>    
+            </li>
+            <li><a href="products.html">Produits</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="#">compte +</a>
+                <ul>
+                    <li><a href="login.html">se connecter</a></li>
+                    <li><a href="register.html">s'inscrire</a></li>
+                </ul>
+            </il>
+        </ul>
+    </nav>
+
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- header section  -->
+
+<section class="heading">
+    <h1>Paiement</h1>
+    <p> <a href="index.html">Acceuil</a> >> Paiement </p>
+</section>
+
+<!-- header section -->
+
+<!-- login form section starts -->
+
+<section class="login-form">
+
+    <form action="">
+        <div class="container">
+
+            <form action="">
+        
+                <div class="row">
+        
+                    <div class="col">
+                    <!-- Replace "test" with your own sandbox Business account app client ID -->
+            
+            <script src="https://www.paypal.com/sdk/js?client-id=AdZ-UUSPgpYn4JSvdqyIZ1yLyrz4aq7foR_F4y2aUfD2IgmsP5fHB0fe3sJm_auqZP7YtrWpDaSJXtq2"></script>
+            <!-- Set up a container element for the button -->
+            <div id="paypal-button-container"></div>
+            <script>
+              paypal.Buttons({
+                // Sets up the transaction when a payment button is clicked
+                createOrder: (data, actions) => {
+                  return actions.order.create({
+                    purchase_units: [{
+                      amount: {
+                        value: '80' // Can also reference a variable or function
+                      }
+                    }]
+                  });
+                },
+                // Finalize the transaction after payer approval
+                onApprove: (data, actions) => {
+                  return actions.order.capture().then(function(orderData) {
+                    // Successful capture! For dev/demo purposes:
+                    console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                    const transaction = orderData.purchase_units[0].payments.captures[0];
+                    alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
+                    // When ready to go live, remove the alert and show a success message within this page. For example:
+                    // const element = document.getElementById('paypal-button-container');
+                    // element.innerHTML = '<h3>Thank you for your payment!</h3>';
+                    // Or go to another URL:  actions.redirect('thank_you.html');
+                  });
+                }
+              }).render('#paypal-button-container');
+            </script>
+        
+        
+                   <div class="col">
+        
+               <div class="row">
+        
+                       
+            </form>
+       
+    </form>
+
+</section>
+<!-- login form section end -->
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Liens Utiles</h3>
+            <a href="logiciels.html"> <i class="fas fa-angle-right"></i> logiciel</a>
+            <a href="siteweb.html"> <i class="fas fa-angle-right"></i> site web</a>
+            <a href="products.html"> <i class="fas fa-angle-right"></i> produits</a>
+            <a href="contact.html"> <i class="fas fa-angle-right"></i> contact</a>
+        </div>
+
+        <div class="box">
+            <h3>Contactez-Nous</h3>
+            <a href="" >   </a>
+            <a href="https://wa.me/212711645036" >+212 7 11 64 50 36</a>
+            <a href="mailto:ibsoft.packaging@gmail.com">ibsoft-packaging@gmail.com</a>
+            <a href="contact.html">Mohammedia, Maroc - 20631</a>
+
+            
+         
+        </div>
+
+        <div class="box">
+            <h3>Suivez-Nous</h3>
+            <a href="https://twitter.com/home"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="https://wa.me/212711645036"> <i class="fab fa-instagram"></i> whatsapp </a>
+            <a href="https://www.linkedin.com/in/bouchaib-alaghrouch-2a6011238/"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="https://www.youtube.com/channel/UCVOVam-UX9E7L0_P5esbA7A"> <i class="fab fa-youtube "></i> youtube </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="">
+                <input type="email" placeholder="enter your emal">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+    
+
+    <h1 class="credit"> <a href="">ICE : 00107842300008  |  IF : 342560 | Taxe professionnelle N° :3200037</a><br> Copyright © 2022  <span>| IBsoft Packaging |</span>  Tous Droits Réservés </h1>
+
+    <div class="credit"> <a href="">Conditions Générales d'Utilisation</a>  <span></span> | | <a href="">Mentions légales </a> </div>
+
+</section>
+
+<!-- footer section ends -->
+</body>
+</html>
